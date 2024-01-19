@@ -1,0 +1,75 @@
+<!-- To add code comments use ctrl + / -->
+<!-- HTML is primarily used to create and structure the content of a website.  -->
+<!DOCTYPE html>
+<html>
+<!--  `<head>...</head>` contains details about the HTML file which is not visible in the browser.  -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>2048</title>
+
+	<meta property="og:title" content="I coded a game with Zuitt!" />
+	<meta property="og:description" content="This Game Development project is powered by Zuitt Coding Bootcamp" />
+	<meta property="og:site_name" content="I coded a game with Zuitt!" />
+	<meta property="og:image" content="[your-deployment-link]/images/story-thumbnail-2048.jpg" />
+	<meta property="og:image:secure_url" content="[your-deployment-link]" />
+
+</head>
+<body>
+<!-- `<body>...</body>` contains the actual content of the HTML file that are visible in the web browser -->
+	<div class="container">
+		<h1>2048</h1>
+		<h2>Created By: Team 3X</h2>
+		<hr id="top-line">
+		<div class="header-container">
+		<div class="score-container">
+            <div class="score-label">
+                Score:
+            </div>
+            <div id="score">
+                0
+            </div>
+        </div>
+
+	        <div class="share-button-container">
+	            <div class="share-label">Share:</div>
+	            <div class="share-icons">
+	                <a href="https://www.facebook.com/sharer/sharer.php?u=[your-deployment-link]" target="_blank">
+	                    <img src="./images/share_2048-fb.svg"/>
+	                </a>
+	            </div>
+	        </div>   
+    	</div>
+
+		<div id="board">
+
+			<!-- All our tiles are created using div tags -->
+			<!-- Therefore our goal is to create tiles, but not using purely html, but with javascript for it to be interactive -->
+
+		    <!-- <div class="tile x2">[r0,c0]</div>
+		    <div class="tile x4">[r0,c1]</div>
+		    <div class="tile x8">[r0,c2]</div>
+		    <div class="tile x16">[r0,c3]</div>
+
+		    <div class="tile">[r1,c0]</div>
+		    <div class="tile">[r1,c1]</div>
+		    <div class="tile">[r1,c2]</div>
+		    <div class="tile">[r1,c3]</div>
+
+		    <div class="tile">[r2,c0]</div>
+		    <div class="tile">[r2,c1]</div>
+		    <div class="tile">[r2,c2]</div>
+		    <div class="tile">[r2,c3]</div>
+
+		    <div class="tile">[r3,c0]</div>
+		    <div class="tile">[r3,c1]</div>
+		    <div class="tile">[r3,c2]</div>
+		    <div class="tile">[r3,c3]</div> -->
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
